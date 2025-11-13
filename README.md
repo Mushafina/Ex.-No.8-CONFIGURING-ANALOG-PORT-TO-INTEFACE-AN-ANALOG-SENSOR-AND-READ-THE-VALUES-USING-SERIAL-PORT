@@ -300,8 +300,9 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif
 Output :
-Screenshot (925)
-WhatsApp Image 2025-11-11 at 9 05 02 AM
+![WhatsApp Image 2025-11-13 at 13 43 13_c2b63cd7](https://github.com/user-attachments/assets/82d27c37-40dd-431f-8220-cc7b0c92660f)
+![WhatsApp Image 2025-11-13 at 15 13 20_9ed88086](https://github.com/user-attachments/assets/6f3f22f4-37cb-4bdb-87e9-697fe3ce62ed)
+
 
 Result :
 Hence,the configuring analog port to inteface an analog sensor and read the values using serial port runned successfully
