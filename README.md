@@ -1,12 +1,12 @@
-Ex. No. :8 CONFIGURING ANALOG PORT TO INTEFACE AN ANALOG SENSOR AND READ THE VALUES USING SERIAL PORT
-Date: 12.11.25
-Aim:
+# Ex. No:8 CONFIGURING ANALOG PORT TO INTEFACE AN ANALOG SENSOR AND READ THE VALUES USING SERIAL PORT
+# Date: 13.11.25
+# Aim:
 To configure ADC channel for interfacing an analog sensor and read the values on the com port
 
-Components required:
+# Components required:
 STM 32 CUBE IDE , STM32 NUCLEO BOARD, CONNECTING CABLE, SERIAL PORT UTILITY , ANALOG SENSOR - 3.3V TYPE
 
-Theory
+# Theory
 ADCs are characterized by:
 
 Resolution [bit]: the number of bits to represent a digital signal. Sampling rate [Hz]: how fast they work.
@@ -54,7 +54,7 @@ This results in a voltage divider where the resistance of the upper arm R1 does 
 
 But since the signal frequency will remain unchanged, we will plot the dependence of capacitance on capacitance ( C = 1-100 pF):
 
-Procedure:
+# Procedure:
 Open STM32CubeIDE Software and go to File → New… → STM32 Project. Click on Board Selector and select NUCLEO-G431RB in the dropdown menu.
 
 Board selector section. Image by author. Insert a project name and select STM32Cube as Targeted Project Type.
@@ -90,7 +90,8 @@ image
 
 VCC pin is used for power A0 pin is an analog output D0 pin is a digital output GND pin is a Ground This module also includes a potentiometer that will fix the threshold value, & the value can be evaluated by the comparator-LM393. The LED will turn on/off based on the threshold value.
 
-Program
+# Program
+```
 #include "main.h"
 #include "stdio.h"
 #include <string.h>
@@ -299,10 +300,11 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 }
 #endif
-Output :
+```
+# Output :
 ![WhatsApp Image 2025-11-13 at 13 43 13_c2b63cd7](https://github.com/user-attachments/assets/82d27c37-40dd-431f-8220-cc7b0c92660f)
 ![WhatsApp Image 2025-11-13 at 15 13 20_9ed88086](https://github.com/user-attachments/assets/6f3f22f4-37cb-4bdb-87e9-697fe3ce62ed)
 
 
-Result :
+# Result :
 Hence,the configuring analog port to inteface an analog sensor and read the values using serial port runned successfully
